@@ -1,0 +1,3 @@
+[submodule "EsoCPU"]
+	path = EsoCPU
+	url = https://github.com/plato4/EsoCPU.git

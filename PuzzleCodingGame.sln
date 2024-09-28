@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleCodingGame.Core", "PuzzleCodingGame.Core\PuzzleCodingGame.Core.csproj", "{552AF6C7-170F-4F74-8974-E8A792F135BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EsoCPU", "EsoCPU", "{3B44F307-E9EA-4C79-8DA6-FE3297C21F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsoCPU", "EsoCPU\EsoCPU\EsoCPU.csproj", "{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsoCPU.Tests", "EsoCPU\EsoCPU.Tests\EsoCPU.Tests.csproj", "{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleCodingGame.Tests", "PuzzleCodingGame.Tests\PuzzleCodingGame.Tests.csproj", "{A4E12A26-0863-41F9-8EBC-CB9163871670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleCodingGame.Wasm", "PuzzleCodingGame.Wasm\PuzzleCodingGame.Wasm.csproj", "{6DD5D5A4-2473-49EB-A783-6E337F9D613A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{552AF6C7-170F-4F74-8974-E8A792F135BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552AF6C7-170F-4F74-8974-E8A792F135BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552AF6C7-170F-4F74-8974-E8A792F135BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552AF6C7-170F-4F74-8974-E8A792F135BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E12A26-0863-41F9-8EBC-CB9163871670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E12A26-0863-41F9-8EBC-CB9163871670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E12A26-0863-41F9-8EBC-CB9163871670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E12A26-0863-41F9-8EBC-CB9163871670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD5D5A4-2473-49EB-A783-6E337F9D613A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD5D5A4-2473-49EB-A783-6E337F9D613A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD5D5A4-2473-49EB-A783-6E337F9D613A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD5D5A4-2473-49EB-A783-6E337F9D613A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98A98401-CF5B-4DBC-9CBF-E4DC4FF95AAE} = {3B44F307-E9EA-4C79-8DA6-FE3297C21F3A}
+		{103ABA47-506F-43B0-ADCE-C2BFDCB18E3E} = {3B44F307-E9EA-4C79-8DA6-FE3297C21F3A}
+	EndGlobalSection
+EndGlobal
