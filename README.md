@@ -1,8 +1,8 @@
 ## Project Structure
 
-Esolang -> Core -> Wasm -> Front
+EsoCPU -> Core -> Wasm -> Front
 
-Esolang: The games puzzle coding language.
+EsoCPU: The games puzzle coding language.
 
 Core: The core game logic, as a library.
 
