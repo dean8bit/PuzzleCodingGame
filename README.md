@@ -10,6 +10,10 @@ Tests: Ensures a basic solution can solve each puzzle in the Core project.
 
 Wasm: Wasm compiles the Core game library.
 
-Front: GDevelop 3D + JS project
+Front: React, Typescript, BabylonJS
 
+## How to build
 
+1. cd into PuzzleCodingGame.Front
+2. npm install
+3. npm build
