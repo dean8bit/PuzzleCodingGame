@@ -10,7 +10,7 @@ export const GameCanvas: React.FC = () => {
     const _game = createGame(canvas.current);
     setGame(_game);
     return (): void => {
-      _game.dispose();
+      _game?.dispose();
     };
   }, [setGame]);
   return <canvas ref={canvas} style={{ width: "100%", height: "100%" }} />;

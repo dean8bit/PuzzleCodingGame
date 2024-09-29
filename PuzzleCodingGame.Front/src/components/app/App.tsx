@@ -1,5 +1,6 @@
 import "./app.css";
-import "../../css/bit.css";
+import "../../css/scifi.css";
+import "../../css/palette.css";
 
 import { createContext, useContext, useState } from "react";
 import React from "react";
@@ -8,6 +9,7 @@ import { GameCanvas } from "../gamecanvas/GameCanvas";
 import { Ui } from "../ui/Ui";
 
 import { Game } from "../../engine/Game";
+import { GitHub } from "../github/GitHub";
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
@@ -30,6 +32,7 @@ export const App: React.FC = () => {
   const [started, setStarted] = useState(false);
   return (
     <div>
+      {window.location.hostname.includes("github") ? <GitHub /> : <></>}
       {started ? (
         <div>
           <GameContext.Provider value={{ game, setGame }}>

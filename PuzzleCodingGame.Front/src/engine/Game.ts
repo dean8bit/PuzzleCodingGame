@@ -5,9 +5,8 @@ export class Game extends BABYLON.Engine {
   public _sceneRegistry: { [name: string]: BABYLON.Scene } = {};
   private _activeScene!: BABYLON.Scene;
   constructor(canvas: HTMLCanvasElement, gameManager: typeof GameManager) {
-    console.log("CREATING GAME");
     super(canvas, true);
-
+    console.log("BEGINNING GAME");
     window.addEventListener("resize", () => this.resize());
     this.onDisposeObservable.add(() => console.log("DISPOSING GAME"));
     const scene = this.createScene(gameManager);

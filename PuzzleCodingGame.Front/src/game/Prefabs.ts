@@ -1,29 +1,34 @@
 import * as BABYLON from "babylonjs";
 import { IPrefab } from "../engine/Prefab";
-import { modelBlock } from "./Models";
-import { Rotate } from "./components/Rotate";
+import { Guy } from "./components/Guy";
+import { TilemapEntity } from "./components/Tilemap";
+import { models } from "./Models";
 
-export const prefabCube: IPrefab = {
-  name: "cube",
-  position: new BABYLON.Vector3(0, 0, 10),
+export const tileEmpty: IPrefab = {
+  name: "empty",
+  position: new BABYLON.Vector3(0, 0, 0),
+};
+
+export const tileFloor: IPrefab = {
+  name: "floor",
+  position: new BABYLON.Vector3(0, 0, 0),
   children: [
     {
-      name: "cube",
-      model: modelBlock,
-      position: new BABYLON.Vector3(0, 0, 0),
-      postBuild: (n) => new Rotate(n),
-      children: [
-        {
-          name: "cube",
-          model: modelBlock,
-          position: new BABYLON.Vector3(2, 0, 0),
-          postBuild: (n) => new Rotate(n),
-        },
-      ],
+      name: "floor",
+      model: models.block,
+      position: new BABYLON.Vector3(0, -1, 0),
     },
   ],
 };
 
+export const guy: IPrefab = {
+  name: "guy",
+  model: models.guy,
+  postBuild: (n) => new Guy(n) && new TilemapEntity(n),
+};
+
 export const prefabs = {
-  cube: prefabCube,
+  tileEmpty,
+  tileFloor,
+  guy,
 };

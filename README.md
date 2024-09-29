@@ -12,6 +12,9 @@ Wasm: Wasm compiles the Core game library.
 
 Front: React, Typescript, BabylonJS
 
+## How to start dev
+1. npm start
+
 ## How to build
 
 1. cd into PuzzleCodingGame.Front
