@@ -8,12 +8,19 @@ import { GameTilemap, GameTilemapEntity, IGameTilemap } from "./GameTilemap";
 import { Guy } from "./Guy";
 import { Component } from "../../engine/Component";
 import { prefabs } from "../Prefabs";
+import bootsharp, {
+  PuzzleCodingGame,
+} from "../../../../PuzzleCodingGame.Wasm/bin/bootsharp";
 
 export class GameManager extends BaseGameManager {
   public guy?: Guy;
   public tilemap?: GameTilemap;
 
   public onStart(): void {
+    PuzzleCodingGame.Wasm.Program.getFrontendName = () => "Browser";
+    bootsharp.boot().then(() => {
+      console.log(`Hello ${PuzzleCodingGame.Wasm.Program.getBackendName()}!`);
+    });
     this.createCamera();
     this.loadMap(tilemapDev);
   }

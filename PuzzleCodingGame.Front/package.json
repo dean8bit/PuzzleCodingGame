@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite --host",
 		"build": "npm run prep && vite build",
+		"start": "npm install  && npm run dev",
 		"prep": "cd .. && cd PuzzleCodingGame.Wasm && dotnet workload restore && dotnet publish && cd .. && cd PuzzleCodingGame.Front",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
