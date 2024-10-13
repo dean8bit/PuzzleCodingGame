@@ -7,6 +7,6 @@
     "start": "cd PuzzleCodingGame.Front && npm start",
     "build:": "cd PuzzleCodingGame.Front && npm run build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Dean R",
+  "license": "see LICENSE"
 }
