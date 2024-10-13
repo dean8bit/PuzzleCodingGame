@@ -1,12 +1,11 @@
 version: "3.7"
 services:
-  babylonjs-game:
+  phaser-react-boilerplate:
     image: node:19-alpine3.16
-    container_name: babylonjs-game
+    container_name: phaser-react-boilerplate
     ports:
       - 5173:5173
     volumes:
       - ./:/home/node/app
     working_dir: /home/node/app
-    command: sh -c "npm install && npm run dev"
-    restart: always
+    command: tail -f /dev/null

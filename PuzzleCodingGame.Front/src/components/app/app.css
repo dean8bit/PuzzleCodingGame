@@ -5,7 +5,8 @@
 
 body {
 	margin: 0%;
-	overflow: hidden;
+	/*overflow-y: hidden; /* Hide vertical scrollbar */
+	/*overflow-x: hidden; /* Hide horizontal scrollbar */
 	user-select: none;
 }
 
@@ -36,18 +37,9 @@ body {
 
 .ui-layer-container {
 	position: absolute;
-	width: 100vw;
-	height: 100vh;
 	top: 0;
 	left: 0;
-}
-
-.prompt-container {
 	width: 100vw;
 	height: 100vh;
-
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
-
