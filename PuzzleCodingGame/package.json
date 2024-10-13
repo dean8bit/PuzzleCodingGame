@@ -7,10 +7,10 @@
 		"dev": "vite --host",
 		"build": "npm run prep && vite build",
 		"start": "npm install  && npm run dev",
-		"prep": "cd .. && cd PuzzleCodingGame.Wasm && dotnet workload restore && dotnet publish && cd .. && cd PuzzleCodingGame.Front",
+		"prep": "cd .. && cd EsoCPU.Wasm && dotnet workload restore && dotnet publish && cd .. && cd PuzzleCodingGame",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
-		"git": "cd .. && git submodule update --init --recursive && cd PuzzleCodingGame.Front",
+		"git": "cd .. && git submodule update --init --recursive && cd PuzzleCodingGame",
 		"postinstall": "npm run git && npm run prep"
 	},
 	"dependencies": {

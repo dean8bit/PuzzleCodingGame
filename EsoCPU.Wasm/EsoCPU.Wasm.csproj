@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PuzzleCodingGame.Core\PuzzleCodingGame.Core.csproj" />
+    <ProjectReference Include="..\EsoCPU\EsoCPU\EsoCPU.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using Bootsharp;
 
-namespace PuzzleCodingGame.Wasm;
+namespace EsoCPU.Wasm;
 
 public static partial class Program
 {
