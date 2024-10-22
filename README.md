@@ -1,8 +1,8 @@
 ## Project Structure
 
-EsoCPU -> Core -> Front
+EsoCPU -> Core -> Unity
 
-              \-> Tests
+              `-> Tests
 
 EsoCPU: The games puzzle coding language.
 

@@ -1,7 +1,4 @@
-﻿using System;
-using EsoCPU;
-
-namespace PuzzleCodingGame.Core
+﻿namespace PuzzleCodingGame.Core
 {
     public class Class1
     {
