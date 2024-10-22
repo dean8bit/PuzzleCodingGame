@@ -1,1 +1,0 @@
-A PhaserJS ReactJS Boilerplate
