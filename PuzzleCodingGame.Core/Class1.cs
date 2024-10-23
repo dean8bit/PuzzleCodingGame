@@ -1,5 +1,4 @@
 ﻿using System;
-using EsoCPU;
 
 namespace PuzzleCodingGame.Core
 {
