@@ -1,0 +1,12 @@
+{
+  "name": "puzzlecodinggame",
+  "version": "1.0.0",
+  "description": "EsoCPU -> Wasm -> Front",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd PuzzleCodingGame && npm start",
+    "build:": "cd PuzzleCodingGame && npm run build"
+  },
+  "author": "Dean R",
+  "license": "see LICENSE"
+}
